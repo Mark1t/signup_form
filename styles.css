@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
 body {
     /* Center the form on the page */
     text-align: center;
+    font-family: 'Tilt Neon', sans-serif;
+    background-color: black;
+    color:white;
   }
   
   form {
@@ -11,6 +16,15 @@ body {
     border-radius: 1em;
   }
   
+  .container {
+    display:flex;
+    align-items: center;
+  }
+
+  .form {
+
+  }
+
   p + p {
     margin-top: 1em;
   }
