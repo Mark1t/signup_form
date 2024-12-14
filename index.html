@@ -1,18 +1,24 @@
 <!DOCTYPE html>
-<html lang='en'>
-  <head>
-    <meta charset='UTF-8'/>
-    <title>Some Web Page</title>
-    <link rel='stylesheet' href='styles.css'/>
-  </head>
-
-  <body>
-    <dic class="container">
-      <div class="img">
-        <img src="image.png">
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Some Web Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="img">
+      <div class="header">
+        <h1>Welcome to My Website</h1>
       </div>
+      <img src="image.png" alt="Image"/>
+    </div>
 
-      <div class="form">
+    <div class="form">
+      <div class="intro">
+        <strong>Fill out the form to sign up for our service!</strong>
+      </div>
+      <div class="form-content">
         <form action="/actionform.php" method="post">
           <p>
             <label for="name">Name:</label>
@@ -27,10 +33,14 @@
             <textarea id="msg" name="user_msg"></textarea>
           </p>
           <p class="button">
-          <button type="submit">Send your message</button>
+            <button type="submit">Send your message</button>
           </p>
-        
         </form>
       </div>
-  </body>
+      <div class="createacc">
+        <button>Create Account</button>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
