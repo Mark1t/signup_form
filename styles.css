@@ -45,7 +45,6 @@ body {
 .form {
   flex-grow: 1;
   height: 100%;
-  padding: 1em;
   border: 1px solid #ccc;
   border-radius: 1em;
   display: flex;
@@ -57,7 +56,7 @@ body {
 .intro,
 .form-content,
 .createacc {
-  flex-grow: 1; /* Equal space for all 3 parts */
+  flex-grow: 1;
   padding: 1em;
 }
 
@@ -65,21 +64,67 @@ body {
   font-weight: bold;
   text-align: left;
   background-color: rgb(243, 243, 243);
+  display: flex;
+  align-items: end;
+  padding-bottom: 50px;
+  font-size: 24px;
+  letter-spacing: 1px;
 }
 
 .form-content {
-  padding-top: 1em;
-  padding-bottom: 1em;
+  max-width: 600px;
+  margin: 0; /* Removed auto margin to prevent centering */
+  display: flex;
+  flex-direction: column; /* Ensure form items stack vertically */
+  align-items: flex-start; /* Align all children to the left */
+  justify-content: start;
+  text-align: left; /* Align text to the left */
+}
+
+.form-intro {
+  width: 100%;  /* Ensure it stretches across the form */
+  text-align: left; /* Align the text to the left */
+  margin-bottom: 20px; /* Space between intro and form fields */
+  font-size: 1.1em; /* Adjust the font size as needed */
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 columns */
+  grid-gap: 15px;
+  align-items: start; /* Align the items to the top of the grid cells */
+  width: 100%; /* Ensure form spans full width */
+}
+
+input {
+  width: 100%; /* Ensure input fields stretch fully within their grid cell */
+  padding: 0.5em;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+.form-content p {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+  text-align: left;
 }
 
 .createacc {
-  text-align: center;
+  text-align: left;
+  padding-left: 40px;
   background-color: rgb(243, 243, 243);
 }
 
 .createacc button {
   padding: 10px 20px;
-  background-color: #007BFF;
+  background-color: #003022;
   color: white;
   border: none;
   border-radius: 4px;
@@ -88,32 +133,6 @@ body {
 
 .createacc button:hover {
   background-color: #0056b3;
-}
-
-label {
-  display: inline-block;
-  min-width: 90px;
-  text-align: right;
-}
-
-input,
-textarea {
-  font: 1em sans-serif;
-  width: 300px;
-  box-sizing: border-box;
-  border: 1px solid #999;
-}
-
-input:focus,
-textarea:focus {
-  outline-style: solid;
-  outline-color: gray;
-  outline-width: 3px;
-}
-
-textarea {
-  vertical-align: top;
-  height: 5em;
 }
 
 button {

@@ -9,36 +9,50 @@
   <div class="container">
     <div class="img">
       <div class="header">
-        <h1>Welcome to My Website</h1>
+        <h1>The street finds it's own uses for things.</h1>
       </div>
       <img src="image.png" alt="Image"/>
     </div>
 
     <div class="form">
       <div class="intro">
-        <strong>Fill out the form to sign up for our service!</strong>
+        <strong>This is not a real online service! You know you need
+          something <br>like this in your life to help you realize your
+          deepest dreams.<br>Sign up <em>now</em>  to get started.
+          <br><br>You <em>know</em> you want to.
+        </strong>
       </div>
       <div class="form-content">
-        <form action="/actionform.php" method="post">
+        <p class="form-intro">Let's do this!</p>
+        <form id="user-form" action="/actionform.php" method="post">
           <p>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="user_name" />
+            <label for="firstn">FIRST NAME:</label>
+            <input type="text" id="name" name="user_firstn" />
+          </p>
+          <p>
+            <label for="lastn">LAST NAME:</label>
+            <input type="text" id="name" name="user_lastn" />
           </p>
           <p>
             <label for="mail">Email:</label>
             <input type="text" id="mail" name="user_mail" />
           </p>
           <p>
-            <label for="msg">Message:</label>
-            <textarea id="msg" name="user_msg"></textarea>
+            <label for="phonenum">PHONE NUMBER:</label>
+            <input type="text" id="name" name="user_phone" />
           </p>
-          <p class="button">
-            <button type="submit">Send your message</button>
+          <p>
+            <label for="password">PASSWORD:</label>
+            <input type="text" id="name" name="user_pass" />
+          </p>
+          <p>
+            <label for="confirm">CONFIRM PASSWORD:</label>
+            <input type="text" id="name" name="user_confirm" />
           </p>
         </form>
       </div>
       <div class="createacc">
-        <button>Create Account</button>
+        <button type="submit" form="user-form" class="createacc">Create Account</button>
       </div>
     </div>
   </div>
