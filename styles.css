@@ -42,6 +42,17 @@ body {
   display: block;
 }
 
+.credit {
+  position: absolute;
+  left: 160px;
+  bottom: 15px;
+}
+
+a, .credit{
+  font-weight: bold;
+  color: yellowgreen;
+}
+
 .form {
   flex-grow: 1;
   height: 100%;
@@ -101,6 +112,16 @@ input {
   padding: 0.5em;
   margin-top: 5px;
   box-sizing: border-box;
+  border-color: #E5E7EB;
+}
+
+input:focus {
+  border-color: blue;
+  outline:none;
+}
+
+input:invalid.pass{
+  border-color: red;
 }
 
 .form-content p {
